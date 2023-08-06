@@ -1,0 +1,12 @@
+<%-include("partials/nav")%>
+<form class="create-product" action="/create-product" method="post">
+   <link rel="stylesheet" href="style.css">
+   <div class="product-all">
+   <h1>create your own product.</h1>
+   <input class="input1" type="text" name="image" placeholder="image URL"/>
+   <input class="heading1" type="text" name="heading" placeholder="heading"/>
+   <textarea class="input2" name="para" placeholder="enter desc here..."></textarea>
+   <button class="product-btn">Create Product</button>
+   </div>
+</form>
+<%-include("partials/footer")%>

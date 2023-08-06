@@ -1,0 +1,13 @@
+<%- include("partials/header")%> <%- include("partials/nav")%>
+<link rel="stylesheet" href="style.css">
+<form class="update-product-form" action="/update-product/<%=index%>" method="post">
+   <div class="product-all">
+      <img style="margin-bottom: 1vmax; padding-top: -200px;" width="400px"  src="<%= post.image %>" alt="">
+   <h1>Update your own product.</h1>
+   <input value="<%=post.image%>" class="input1" type="text" name="image" placeholder="image URL"/>
+   <input value="<%=post.heading%>" class="heading1" type="text" name="heading" placeholder="heading"/>
+   <textarea  class="input2" name="para" placeholder="enter desc here...">"<%=post.para%>"</textarea>
+   <button class="product-btn"> <a style="text-decoration: none; color: black;" href="<%=index%>">update Product</a></button>
+   </div>
+</form>
+<%-include("partials/footer")%>
